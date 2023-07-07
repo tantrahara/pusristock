@@ -86,16 +86,16 @@
           <tr>
             <td><?php echo $data["name"]; ?></td>
             <td><?php echo $data["size"]; ?>KG</td>
-            <td>Rp.<?php echo $data["hpp"]; ?></td>
-            <td>Rp.<?php echo $data["kantong"]; ?></td>
-            <td>Rp.<?php echo $data["kardus"]; ?></td>
-            <td>Rp.<?php echo $data["bysusut"]; ?></td>
-            <td>Rp.<?php echo $data["tkbm"]; ?></td>
-            <td>Rp.<?php echo $data["byreward"]; ?></td>
-            <td>Rp.<?php echo $data["ppn"]; ?></td>
+            <td>Rp.<?php echo number_format($data["hpp"]); ?></td>
+            <td>Rp.<?php echo number_format($data["kantong"]); ?></td>
+            <td>Rp.<?php echo number_format($data["kardus"]); ?></td>
+            <td>Rp.<?php echo number_format($data["bysusut"]); ?></td>
+            <td>Rp.<?php echo number_format($data["tkbm"]); ?></td>
+            <td>Rp.<?php echo number_format($data["byreward"]); ?></td>
+            <td>Rp.<?php echo number_format($data["ppn"]); ?></td>
             <td><?php echo $data["lokasi"]; ?></td>
             <td><?php echo $data["transportasi"]; ?></td>
-            <td>Rp.<?php echo $data["biayatransport"]; ?></td>
+            <td>Rp.<?php echo number_format($data["biayatransport"]); ?></td>
             <td><a href="../hapus2.php?id_price=<?php echo $data['id_price']; ?>">Hapus</a> </td>
           </tr>
         <?php } ?>

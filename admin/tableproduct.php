@@ -33,7 +33,7 @@
     <!-- /Konek Database -->
 
     <!-- Navbar -->
-    <div id="tab_menu">
+    <div class="tab_menu">
       <ul class="topnev">
         <li> <a href="indexx2.php">Table Harga</a> </li>
         <li class="rightNav"> <a href="logout.php">LOGOUT</a> </li>

@@ -39,6 +39,14 @@ table {
   border-collapse: collapse;
   margin: 1em;
 }
+
+thead th {
+  position: sticky;
+  top: 40px;
+  z-index: 999;
+  background-color: #012B39;
+}
+
 th {
   border-bottom: 1px solid #364043;
   color: #E2B842;
@@ -64,6 +72,9 @@ tbody tr:hover {
 
 .tab_menu {
   box-shadow: 0 4px 6px -6px black;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 .topnev {
