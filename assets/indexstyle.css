@@ -1,0 +1,134 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	/*background: linear-gradient(45deg, #49a09d, #5f2c82);*/
+	background: #76b852;
+	background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.head{
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.out{
+  float: right;
+  text-align: right;
+  margin-right: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #BF5247;
+}
+.out a{
+  text-decoration: none;
+}
+
+.isi{
+  color: #fff;
+  margin-left: 20px;
+}
+
+a{
+  color: #fff;
+}
+
+.isi a{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: grey;
+  text-decoration: none;
+}
+
+.container {
+	position: static;
+	top: 50%;
+	left: 50%;
+	transform: translate(10%, 10%);
+}
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+	text-align: left;
+}
+
+thead {
+	th {
+		background-color: #55608f;
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+			}
+		}
+	}
+}
+
+#tabMenu {
+background:#000000;
+margin:10px 0 0 0;
+padding:5px 0 0 50px;
+}
+ul.topnev {
+margin:0;
+padding:0;
+list-style:none;
+border:#000;
+}
+ul.topnev li {
+margin:0;
+padding:0;
+list-style:none;
+display:inline;
+}
+ul.topnev li a {
+padding:10px;
+font:bold 12px/34px Tahoma, Arial, Helvetica, sans-serif;
+text-decoration:none;
+color:#FFF;
+}
+ul.topnev li a:hover {
+background:#FFF;
+color:#3e3a3a
+}

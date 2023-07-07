@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url(pabrikss.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container{
+  padding: 16px;
+  margin: auto;
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+input[type=text], input[type=password], input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form .box{
+  border: 3px solid #f1f1f1;
+  width: 25%;
+  margin: 10% auto;
+  padding: 20px;
+}
+
+form{
+  border: none;
+    margin: 10px auto;
+    margin-right: 300px;
+    width: 20%;
+    height: auto;
+    background-color: #ebebe0;
+    padding: 20px;
+}
