@@ -1,3 +1,18 @@
+<?php
+    // cek login
+    session_start();
+    
+    if (!isset($_SESSION['status']) || $_SESSION['status'] != "login") {
+      header("location:../index.php?pesan=belum_login");
+      exit(); // menyetopkan code selanjutnya
+    }
+
+    /* 
+      Dari chatGPT :
+        "session_start()" harus dipanggil di paling awal code (sebelum tag - tag html). karena function ini harus dipanggil sebelum ada output ke browser (tag - tag html dianggap output). 
+    */
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -8,17 +23,6 @@
 </head>
 
 <body>
-  <!-- Cek Status Login -->
-  <?php
-    session_start();
-
-    if ($_SESSION['status'] != "login") {
-      header("location:../index.php?pesan=belum_login");
-    }
-  ?>
-  <!-- /Cek Status Login -->
-
-  <!-- Konek Database -->
   <?php
     include "../koneksi.php";
 
